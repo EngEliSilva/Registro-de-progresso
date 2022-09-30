@@ -1,13 +1,14 @@
-from typing import Concatenate
+from cgi import print_arguments
+from operator import concat
 
 
-print("Preencha as informações abaixo:")
-nome = input("Nome: ")
-sobrenome = input("Sobrenome: ")
-print("Data de nascimento:")
-dia = input("dia: ")
-mes = input("mês: ")
-ano = input("ano: ")
-nascimento = (dia, mes, ano)
-print(dia, mes, ano)
-str
+n1 = input("Digite um número de 0 a 10: ")
+n2 = input("Digite outro número de 0 a 10: ")
+operacao = input("digite um símbolo de operação matemática: ")
+print("Quanto é ", end=" ")
+print(n1, end=" ")
+print(operacao, end=" ")
+print(n2, end=" ")
+print("?")
+resposta = input()
+if(resposta == n1 operacao n2, "Parabens :-)", "Você errou :-/")
