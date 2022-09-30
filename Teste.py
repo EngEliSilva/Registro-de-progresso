@@ -1,14 +1,17 @@
-from cgi import print_arguments
-from operator import concat
+# Exemplo de uso da função Random
+import random
+print("Teste sua sorte!")
+numero = random.randrange(0,10)
+escolha = int(input("Digite um número de 0 a 9: \n"))
+tentativa = 1
+while numero != escolha:
+    tentativa += 1
+    print(">>>", numero, "<<<")
+    print("Errou. Tente de novo")
+    escolha = int(input("Digite um número de 0 a 9: \n"))
+print("Parabéns, você acertou na ", tentativa, "ª tentativa!", sep="")
 
-
-n1 = input("Digite um número de 0 a 10: ")
-n2 = input("Digite outro número de 0 a 10: ")
-operacao = input("digite um símbolo de operação matemática: ")
-print("Quanto é ", end=" ")
-print(n1, end=" ")
-print(operacao, end=" ")
-print(n2, end=" ")
-print("?")
-resposta = input()
-if(resposta == n1 operacao n2, "Parabens :-)", "Você errou :-/")
+# Exemplo de uso do laço "for"
+#for x in range(3):
+#    numero = random.randrange(0,11)
+#    print(numero)
