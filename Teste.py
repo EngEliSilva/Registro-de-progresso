@@ -1,17 +1,15 @@
-# Exemplo de uso da função Random
-import random
-print("Teste sua sorte!")
-numero = random.randrange(0,10)
-escolha = int(input("Digite um número de 0 a 9: \n"))
-tentativa = 1
-while numero != escolha:
-    tentativa += 1
-    print(">>>", numero, "<<<")
-    print("Errou. Tente de novo")
-    escolha = int(input("Digite um número de 0 a 9: \n"))
-print("Parabéns, você acertou na ", tentativa, "ª tentativa!", sep="")
 
-# Exemplo de uso do laço "for"
-#for x in range(3):
-#    numero = random.randrange(0,11)
-#    print(numero)
+import os
+os.system('cls')
+n1 = int(2022)
+n2 = int(input("Sua idade:\n"))
+resposta = input("Já fez aniversário esse ano? \ns = sim \nn = não\n")
+if resposta == "s":
+    n3 = 1
+else:
+    n3 = 2
+if n3 == 1:
+    n4 = n1 - n2
+else:
+    n4 = n1 - n2 + 1
+print (n4)
